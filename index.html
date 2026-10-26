@@ -53,6 +53,14 @@ h1 em{font-style:normal;color:var(--blue-hi)}
 .sticker{position:absolute;right:-12px;top:-30px;background:var(--amber);color:#1a1300;font:800 22px/1 var(--head);width:88px;height:88px;border-radius:50%;display:grid;place-items:center;text-align:center;transform:rotate(9deg);box-shadow:0 6px 0 #b27d00;z-index:3}
 .sticker small{display:block;font:600 11px/1.1 var(--body);margin-top:2px}
 
+
+.wtf{display:flex;gap:10px}
+.wtf a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--blue);border:2px solid #0b3c7d;color:#fff;font:700 20px/1 var(--head);text-decoration:none;transition:background .15s,transform .15s}
+.wtf a:hover{background:var(--blue-hi);transform:translateY(-2px)}
+.brand .wtf{margin-left:auto}
+footer .wtf a{width:34px;height:34px;font-size:18px}
+@media (prefers-reduced-motion:reduce){.wtf a{transition:none}}
+
 /* ---------- sections ---------- */
 section{padding:80px 0;border-bottom:1px solid var(--line)}
 h2{font:700 clamp(30px,4.4vw,48px)/1.05 var(--head);margin-bottom:14px;max-width:18ch}
@@ -154,7 +162,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 
 <header class="hero">
   <div class="wrap">
-    <div class="brand"><span class="logo" aria-hidden="true">A</span><b>AMO Commander</b></div>
+    <div class="brand"><span class="logo" aria-hidden="true">A</span><b>AMO Commander</b><nav class="wtf " aria-label="Links"><a href="https://analogaudio.github.io/lights-sounds/" target="_blank" rel="noopener" title="Website" aria-label="Website">w</a><a href="https://www.tiktok.com/@analogaudio430" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok">t</a><a href="https://www.facebook.com/amo430" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">f</a></nav></div>
     <div class="copy">
       <h1>A free two-pane file manager built for fast file work.</h1>
       <p class="lead">Copy, move, rename and find files between two panes, with a viewer, editor and archive tools one key away. <strong>One exe, nothing to install,</strong> and it runs inside WinPE.</p>
@@ -358,6 +366,7 @@ Audio channels: 2
     <span>clonetwist@gmail.com</span>
     <span>+639106727933</span>
     <span>facebook.com/amo430</span>
+    <nav class="wtf " aria-label="Links"><a href="https://analogaudio.github.io/lights-sounds/" target="_blank" rel="noopener" title="Website" aria-label="Website">w</a><a href="https://www.tiktok.com/@analogaudio430" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok">t</a><a href="https://www.facebook.com/amo430" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">f</a></nav>
   </div>
 </footer>
 
